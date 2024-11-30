@@ -1,0 +1,9 @@
+module TypedParams
+  class Config
+    @config: Hash[Symbol, untyped]
+
+    def [](key: Symbol): untyped
+
+    def []=(key: Symbol, value: untyped): void
+  end
+end

@@ -12,9 +12,9 @@ gem "rspec"
 gem "rubocop"
 
 group :development do
-  gem "rubocop-md", require: false
-  gem "rubocop-rake", require: false
-  gem "rubocop-rspec", require: false
-  gem "rubocop-shopify", require: false
-  gem "rubocop-sorbet", require: false
+  gem "rubocop-rails-omakase"
+
+  platforms :ruby do # C Ruby (MRI), Rubinius or TruffleRuby, but NOT Windows
+    gem "tapioca", require: false
+  end
 end
